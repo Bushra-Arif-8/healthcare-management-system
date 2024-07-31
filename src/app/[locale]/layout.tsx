@@ -1,4 +1,3 @@
-// src/app/[locale]/layout.tsx
 "use client";
 
 import { Provider } from 'react-redux';
@@ -13,18 +12,23 @@ import urMessages from '../../../messages/ur.json';  // Adjust path for the mess
 
 const inter = Inter({ subsets: ['latin'] });
 
-const messages = {
+// Define the type for your messages
+type Locale = 'en' | 'ur';
+
+const messages: Record<Locale, any> = {
   en: enMessages,
   ur: urMessages,
 };
 
+interface RootLayoutProps {
+  children: React.ReactNode;
+  params: { locale: Locale };  // Ensure the locale is of type Locale
+}
+
 export default function RootLayout({
   children,
   params: { locale },
-}: {
-  children: React.ReactNode;
-  params: { locale: string };
-}) {
+}: RootLayoutProps) {
   return (
     <html lang={locale}>
       <body className={inter.className}>
