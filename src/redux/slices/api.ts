@@ -1,18 +1,16 @@
 // src/redux/slices/api.ts
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
+// Define the API
 export const api = createApi({
   reducerPath: 'api',
-
-  baseQuery: fetchBaseQuery({ baseUrl: '/api' }), // Adjust the base URL as needed
-
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://jsonplaceholder.typicode.com' }), // Base URL for the API
   endpoints: (builder) => ({
-
-    getExample: builder.query<any, void>({
-        
-      query: () => 'example-endpoint', // Replace with your API endpoint
+    getTodo: builder.query<any, void>({
+      query: () => 'todos/1', // Endpoint to fetch a specific TODO item
     }),
   }),
 });
 
-export const { useGetExampleQuery } = api;
+// Export hooks for usage in functional components
+export const { useGetTodoQuery } = api;

@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { useGetExampleQuery } from '../../redux/slices/api'; // Import the RTK Query hook
+import { useGetTodoQuery } from '../../redux/slices/api'; // Import the RTK Query hook
 
 export default function Home() {
   const t = useTranslations('IndexPage');
   
   // Use the RTK Query hook to fetch data
-  const { data, error, isLoading } = useGetExampleQuery();
+  const { data, error, isLoading } = useGetTodoQuery();
 
   return (
     <div>
@@ -17,8 +17,8 @@ export default function Home() {
       {/* Render data or loading/error states */}
       {isLoading && <p>Loading...</p>}
 
-      {error && <p>Error: {error.message}</p>}
-      
+      {error && <p>Error: {(error as any).message}</p>}
+
       {data && (
         <div>
           <h2>Data from API:</h2>
