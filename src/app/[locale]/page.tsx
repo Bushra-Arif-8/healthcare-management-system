@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { useGetTodoQuery } from '../../redux/slices/api'; // Import the RTK Query hook
+import { useGetTodoQuery } from '../../redux/slices/api'; // Adjust path if needed
 
 export default function Home() {
   const t = useTranslations('IndexPage');

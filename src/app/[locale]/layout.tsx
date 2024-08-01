@@ -5,7 +5,7 @@ import { store } from '../../redux/store';
 import { ThemeProvider } from '../../styles/themes/ThemeProvider';
 import Header from '@/components/header';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '..//globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import enMessages from '../../../messages/en.json';  // Adjust path for the messages
 import urMessages from '../../../messages/ur.json';  // Adjust path for the messages
