@@ -12,7 +12,6 @@ import urMessages from '../../../messages/ur.json';  // Adjust path for the mess
 
 const inter = Inter({ subsets: ['latin'] });
 
-// Define the type for your messages
 type Locale = 'en' | 'ur';
 
 const messages: Record<Locale, any> = {
@@ -22,7 +21,7 @@ const messages: Record<Locale, any> = {
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: { locale: Locale };  // Ensure the locale is of type Locale
+  params: { locale: Locale };
 }
 
 export default function RootLayout({
@@ -34,11 +33,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <Provider store={store}>
           <NextIntlClientProvider
-            messages={messages[locale]}  // Provide messages for the current locale
-            locale={locale}              // Provide the locale explicitly
+            messages={messages[locale]}
+            locale={locale}
           >
             <ThemeProvider>
-              <div className='flex flex-col min-h-screen max-w-4xl mx-auto'>
+              <div className='flex flex-col min-h-screen w-full'>
                 <Header />
                 <div className='flex-grow mt-20'>{children}</div>
               </div>

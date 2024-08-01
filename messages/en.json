@@ -6,7 +6,35 @@
       "title": "Page Not Found",
       "description": "Oops! It seems like you've stumbled upon a page that doesn't exist. Don't worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!"
     },
-    "Navigation": {
-      "home": "Home"
+    
+      "Navigation": {
+    "Home": "Home",
+    "ContactUs": "Contact Us",
+    "Help": "Help",
+    "Settings": "Settings",
+    "Reviews": "Reviews",
+    "AboutUs": "About Us"
+  },
+  "Pages": {
+    "ContactUs": {
+      "Title": "Contact Us",
+      "Description": "This is the Contact Us page."
+    },
+    "Help": {
+      "Title": "Help",
+      "Description": "This is the Help page."
+    },
+    "Settings": {
+      "Title": "Settings",
+      "Description": "This is the Settings page."
+    },
+    "Reviews": {
+      "Title": "Reviews",
+      "Description": "This is the Reviews page."
+    },
+    "AboutUs": {
+      "Title": "About Us",
+      "Description": "This is the About Us page."
     }
   }
+}
