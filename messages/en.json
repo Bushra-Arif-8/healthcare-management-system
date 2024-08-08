@@ -34,6 +34,37 @@
     "About Us": {
       "Title": "About Us",
       "Description": "This is the About Us page."
+    },
+    
+      "IndexPage": {
+        "title": "Welcome to the Homepage"
+      },
+      "LoginPage": {
+        "title": "Sign in to your account",
+        "emailLabel": "Email address",
+        "emailPlaceholder": "Email address",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Password",
+        "forgotPassword": "Forgot your password?",
+        "signIn": "Sign In",
+        "signingIn": "Signing In...",
+        "noAccount": "Don't have an account?",
+        "registerHere": "Register here"
+      },
+      "RegisterPage": {
+        "title": "Create your account",
+        "emailLabel": "Email address",
+        "emailPlaceholder": "Email address",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Password",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Confirm Password",
+        "register": "Register",
+        "registering": "Registering...",
+        "alreadyHaveAccount": "Already have an account?",
+        "loginHere": "Login here"
+      }
     }
+    
   }
-}
+

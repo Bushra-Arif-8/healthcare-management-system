@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
 import { Provider } from 'react-redux';
 import { store } from '../../redux/store';
-import { ThemeProvider } from '../../styles/themes/ThemeProvider';
-import Header from '@/components/header';
 import { Inter } from 'next/font/google';
 import '..//globals.css';
+import { ThemeProvider } from '@/utils/ThemeProvider';
 import { NextIntlClientProvider } from 'next-intl';
-import enMessages from '../../../messages/en.json';  // Adjust path for the messages
-import urMessages from '../../../messages/ur.json';  // Adjust path for the messages
+import enMessages from '../../../messages/en.json';  // Adjust path if needed
+import urMessages from '../../../messages/ur.json';  // Adjust path if needed
+import LocalSwitcher from '../../components/local-switcher'; // Adjust the path as needed
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -32,17 +32,15 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <Provider store={store}>
+        <ThemeProvider>
           <NextIntlClientProvider
             messages={messages[locale]}
             locale={locale}
           >
-            <ThemeProvider>
-              <div className='flex flex-col min-h-screen w-full'>
-                <Header />
-                <div className='flex-grow mt-20'>{children}</div>
-              </div>
-            </ThemeProvider>
+            {children}
+            
           </NextIntlClientProvider>
+          </ThemeProvider>
         </Provider>
       </body>
     </html>

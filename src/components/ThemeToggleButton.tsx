@@ -2,7 +2,7 @@
 "use client";
 
 import React from 'react';
-import { useTheme } from '../styles/themes/ThemeProvider';
+import { useTheme } from '../utils/ThemeProvider';
 
 const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useTheme();

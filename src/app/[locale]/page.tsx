@@ -1,30 +1,15 @@
 "use client";
 
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import { useGetTodoQuery } from '../../redux/slices/api'; // Adjust path if needed
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
-  const t = useTranslations('IndexPage');
-  
-  // Use the RTK Query hook to fetch data
-  const { data, error, isLoading } = useGetTodoQuery();
+  const router = useRouter();
 
-  return (
-    <div>
-      <h1 className='text-4xl mb-4 font-semibold'>{t('title')}</h1>
+  useEffect(() => {
+    // Redirect to the login page on component mount
+    router.push('/en/auth/login');
+  }, [router]);
 
-      {/* Render data or loading/error states */}
-      {isLoading && <p>Loading...</p>}
-
-      {error && <p>Error: {(error as any).message}</p>}
-
-      {data && (
-        <div>
-          <h2>Data from API:</h2>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-        </div>
-      )}
-    </div>
-  );
+  return null; // Since you don't want to show any content
 }

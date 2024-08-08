@@ -34,6 +34,36 @@
     "About Us": {
       "Title": "ہمارے بارے میں",
       "Description": "یہ ہمارے بارے میں صفحہ ہے۔"
+    },
+    
+      "IndexPage": {
+        "title": "صفحہ اول پر خوش آمدید"
+      },
+      "LoginPage": {
+        "title": "اپنے اکاؤنٹ میں سائن ان کریں",
+        "emailLabel": "ای میل ایڈریس",
+        "emailPlaceholder": "ای میل ایڈریس",
+        "passwordLabel": "پاس ورڈ",
+        "passwordPlaceholder": "پاس ورڈ",
+        "forgotPassword": "اپنا پاسورڈ بھول گئے؟",
+        "signIn": "سائن ان",
+        "signingIn": "سائن ان ہو رہا ہے...",
+        "noAccount": "کیا آپ کے پاس اکاؤنٹ نہیں ہے؟",
+        "registerHere": "یہاں رجسٹر کریں"
+      },
+      "RegisterPage": {
+        "title": "اپنا اکاؤنٹ بنائیں",
+        "emailLabel": "ای میل ایڈریس",
+        "emailPlaceholder": "ای میل ایڈریس",
+        "passwordLabel": "پاس ورڈ",
+        "passwordPlaceholder": "پاس ورڈ",
+        "confirmPasswordLabel": "پاس ورڈ کی تصدیق کریں",
+        "confirmPasswordPlaceholder": "پاس ورڈ کی تصدیق کریں",
+        "register": "رجسٹر",
+        "registering": "رجسٹر ہو رہا ہے...",
+        "alreadyHaveAccount": "کیا آپ کے پاس پہلے سے اکاؤنٹ ہے؟",
+        "loginHere": "یہاں لاگ ان کریں"
+      }
     }
   }
-}
+
