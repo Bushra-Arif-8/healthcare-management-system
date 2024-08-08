@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useState } from 'react';
 import PatientOverview from './patientoverview';
 import PhysicalExam from './physicalexam';
